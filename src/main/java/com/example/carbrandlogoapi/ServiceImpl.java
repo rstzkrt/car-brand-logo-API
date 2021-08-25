@@ -38,6 +38,7 @@ public class ServiceImpl implements ModelService {
         }
 
         //multiple for loops will be removed/replaced for better performance soon...
+        //recursive function
 
         for (Element temp : li) {
 
