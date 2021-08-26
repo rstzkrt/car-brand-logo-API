@@ -9,9 +9,10 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
+@CrossOrigin("http://localhost:4200/")
 @Service
-
 public class ServiceImpl implements ModelService {
 
     @Override
