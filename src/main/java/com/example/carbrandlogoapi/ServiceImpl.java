@@ -32,7 +32,9 @@ public class ServiceImpl implements ModelService {
 
             if (modelList.size() == 48) {
                 url = "https://www.carlogos.org/car-brands/list_1_2.html";
-
+                doc =Jsoup.connect(url).userAgent("Mozilla/11").get();
+                ul=doc.select(".logo-list");
+                li = ul.select("li");
             }
 
             modelList.add(new Model(brand, logoURL));
@@ -48,7 +50,9 @@ public class ServiceImpl implements ModelService {
 
             if (modelList.size() == 95) {
                 url = "https://www.carlogos.org/car-brands/list_1_3.html";
-
+                doc =Jsoup.connect(url).userAgent("Mozilla/11").get();
+                ul=doc.select(".logo-list");
+                li = ul.select("li");
             }
 
             modelList.add(new Model(brand, logoURL));
