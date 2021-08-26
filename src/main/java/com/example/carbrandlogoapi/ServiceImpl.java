@@ -30,7 +30,7 @@ public class ServiceImpl implements ModelService {
             String logoURL = "https://www.carlogos.org" + temp.childNode(0).childNode(0).attributes().get("src");
             String brand = temp.select("a").first().childNode(1).toString();
 
-            if (modelList.size() == 48) {
+            if (modelList.size() == 47) {
                 url = "https://www.carlogos.org/car-brands/list_1_2.html";
                 doc =Jsoup.connect(url).userAgent("Mozilla/11").get();
                 ul=doc.select(".logo-list");
